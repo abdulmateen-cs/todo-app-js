@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="LOGO.svg" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My To-Do List</title>
+</head>
+<body >
+    <div class="container">
+
+    
+        <header>
+            <div class="header_logo">
+                <img class="logo" src="LOGO.svg" alt="" >
+            </div>
+
+            <div class="header_title">
+                <h1>My To-Do List</h1>
+            </div>
+
+           
+            
+        </header>
+      
+        <div class="task_input_card">
+
+        <div class="card_title">
+           <h2>+ Add New Task </h2>
+        </div>
+
+        <div class="task_form">
+
+            <div class="input_part">
+            <label for="task_name">Enter Your Task: </label>
+            <input class="task_input" id="task_name" type="text" required >
+             </div>
+             
+             <div class="options_part">
+                
+                <div class="catergory" >
+                    <label for="task_category">Catergory</label>
+                    <select id="task_category" required>
+                        <option value="Work">Work</option>
+                        <option value="Study">Study</option>
+                        <option value="Personal">Personal</option>
+                    </select>
+                </div>
+
+                 <div class="priority">
+                    <label for="task_priority">Priority</label>
+                    <select  id="task_priority" required>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="date">
+                    <label for="task_date">Date</label>
+                    <input type="date" id="task_date" required  >
+                </div>
+
+                <div class="add_button">
+                    <button id="add_task_btn" class="btn">Add Task</button>
+                </div>
+
+             </div>
+
+
+
+
+        </div>
+
+        </div>
+
+
+
+        <div class="task_list">
+            <div class="task_list_header">
+             
+                 <h2 class="my_tasks">Your Tasks</h2>
+                 
+            </div>
+ 
+
+  <!-- Heading Row -->
+  <div class="task_header">
+    <span>Status</span>
+    <span>Task</span>
+    <span>Category</span>
+    <span>Priority</span>
+    <span>Date</span>
+    <span>Delete</span>
+    
+  </div>
+
+
+
+  <div class="task_container">
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
